@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:waxed_weathered_copper"
+  },
+  "result": "cubeplus:waxed_weathered_copper_stairs_basic",
+  "count": 1
+}

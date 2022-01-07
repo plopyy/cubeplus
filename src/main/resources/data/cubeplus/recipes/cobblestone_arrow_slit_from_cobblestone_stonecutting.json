@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": "cubeplus:cobblestone_arrow_slit",
+  "count": 1
+}

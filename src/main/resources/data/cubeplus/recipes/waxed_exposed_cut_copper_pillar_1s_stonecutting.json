@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:waxed_exposed_cut_copper"
+  },
+  "result": "cubeplus:waxed_exposed_cut_copper_pillar_1s",
+  "count": 1
+}

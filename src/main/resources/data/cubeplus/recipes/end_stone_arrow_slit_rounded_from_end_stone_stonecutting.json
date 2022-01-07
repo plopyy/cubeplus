@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:end_stone"
+  },
+  "result": "cubeplus:end_stone_arrow_slit_rounded",
+  "count": 1
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "cubeplus:oak_planks_stairs_4steps",
+    "cubeplus:spruce_planks_stairs_4steps",
+    "cubeplus:birch_planks_stairs_4steps",
+    "cubeplus:jungle_planks_stairs_4steps",
+    "cubeplus:acacia_planks_stairs_4steps",
+    "cubeplus:dark_oak_planks_stairs_4steps",
+    "cubeplus:crimson_planks_stairs_4steps",
+    "cubeplus:warped_planks_stairs_4steps"
+  ]
+}

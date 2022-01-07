@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:slates_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:cracked_deepslate_tiles"
+    }
+  },
+  "result": {
+    "item": "cubeplus:cracked_deepslate_tiles_slates_rooftop_side",
+    "count": 2
+  }
+}

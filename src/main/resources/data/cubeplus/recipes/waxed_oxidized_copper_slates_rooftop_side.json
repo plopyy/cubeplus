@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:slates_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:waxed_oxidized_copper"
+    }
+  },
+  "result": {
+    "item": "cubeplus:waxed_oxidized_copper_slates_rooftop_side",
+    "count": 2
+  }
+}

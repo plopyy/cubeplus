@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cubeplus:block/thatch_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/hay_block"
+    },
+    "type=top": {
+      "model": "cubeplus:block/thatch_slab_top"
+    }
+  }
+}

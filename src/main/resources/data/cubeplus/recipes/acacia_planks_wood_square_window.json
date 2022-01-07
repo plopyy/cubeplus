@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:acacia_window_frame"
+    },
+    "Y": {
+      "item": "cubeplus:window_square_glass_pane"
+    }
+  },
+  "result": {
+    "item": "cubeplus:acacia_planks_wood_square_window",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:dark_prismarine"
+  },
+  "result": "cubeplus:dark_prismarine_pillar_round_12s",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:mossy_stone_bricks"
+  },
+  "result": "cubeplus:mossy_stone_bricks_pillar_2s",
+  "count": 1
+}

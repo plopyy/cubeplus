@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:polished_blackstone_brick_slab"
+    },
+    "Y": {
+      "item": "cubeplus:waxed_cut_copper_stairs_4steps"
+    }
+  },
+  "result": {
+    "item": "cubeplus:waxed_cut_copper_slates_roof",
+    "count": 1
+  }
+}

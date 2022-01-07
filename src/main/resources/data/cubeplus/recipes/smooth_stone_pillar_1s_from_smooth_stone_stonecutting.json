@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:smooth_stone"
+  },
+  "result": "cubeplus:smooth_stone_pillar_1s",
+  "count": 1
+}

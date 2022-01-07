@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/blackstone_pillar_10s" },
+        "axis=z":  { "model": "cubeplus:block/blackstone_pillar_10s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/blackstone_pillar_10s", "x": 90, "y": 90 }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:smooth_quartz"
+  },
+  "result": "cubeplus:smooth_quartz_stairs_4steps",
+  "count": 1
+}

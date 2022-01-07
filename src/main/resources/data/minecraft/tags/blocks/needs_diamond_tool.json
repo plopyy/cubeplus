@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "cubeplus:netherite_block_arrow_slit",
+    "cubeplus:netherite_block_arrow_slit_rounded",
+    "cubeplus:netherite_block_pillar_10s",
+    "cubeplus:netherite_block_pillar_1s",
+    "cubeplus:netherite_block_pillar_2s",
+    "cubeplus:netherite_block_pillar_4s",
+    "cubeplus:netherite_block_pillar_6s",
+    "cubeplus:netherite_block_pillar_round_12s",
+    "cubeplus:netherite_block_pillar_round_6s",
+    "cubeplus:netherite_block_pillar_round_8s",
+    "cubeplus:netherite_block_slates_roof",
+    "cubeplus:netherite_block_stairs_4steps",
+    "cubeplus:netherite_block_stairs_basic",
+    "cubeplus:netherite_block_thatch_roof",
+    "cubeplus:netherite_block_tiles_roof",
+    "cubeplus:netherite_block_slates_rooftop_side",
+    "cubeplus:netherite_block_thatch_rooftop_side",
+    "cubeplus:netherite_block_tiles_rooftop_side"
+  ]
+}

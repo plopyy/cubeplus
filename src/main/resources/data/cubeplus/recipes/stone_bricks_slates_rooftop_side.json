@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:slates_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "item": "cubeplus:stone_bricks_slates_rooftop_side",
+    "count": 2
+  }
+}

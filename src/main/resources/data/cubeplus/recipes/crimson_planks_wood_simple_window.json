@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:crimson_window_frame"
+    },
+    "Y": {
+      "item": "cubeplus:window_simple_glass_pane"
+    }
+  },
+  "result": {
+    "item": "cubeplus:crimson_planks_wood_simple_window",
+    "count": 4
+  }
+}

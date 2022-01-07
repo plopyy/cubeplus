@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/netherite_block_pillar_round_6s" },
+        "axis=z":  { "model": "cubeplus:block/netherite_block_pillar_round_6s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/netherite_block_pillar_round_6s", "x": 90, "y": 90 }
+    }
+}

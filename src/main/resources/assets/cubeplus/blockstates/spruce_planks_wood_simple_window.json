@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=east,sneak=false":  { "model": "cubeplus:block/spruce_planks_wood_simple_window", "y": 90, "uvlock": true },
+        "facing=west,sneak=false":  { "model": "cubeplus:block/spruce_planks_wood_simple_window", "y": 90, "uvlock": true },
+        "facing=south,sneak=false": { "model": "cubeplus:block/spruce_planks_wood_simple_window" },
+        "facing=north,sneak=false": { "model": "cubeplus:block/spruce_planks_wood_simple_window" },
+		"facing=east,sneak=true":  { "model": "cubeplus:block/spruce_planks_wood_simple_window", "x": 90, "uvlock": true },
+        "facing=west,sneak=true":  { "model": "cubeplus:block/spruce_planks_wood_simple_window", "x": 90, "uvlock": true },
+        "facing=south,sneak=true": { "model": "cubeplus:block/spruce_planks_wood_simple_window", "x": 90, "uvlock": true },
+        "facing=north,sneak=true": { "model": "cubeplus:block/spruce_planks_wood_simple_window", "x": 90, "uvlock": true }
+    }
+}

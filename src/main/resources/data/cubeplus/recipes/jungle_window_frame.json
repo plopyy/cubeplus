@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:jungle_slab"
+    }
+  },
+  "result": {
+    "item": "cubeplus:jungle_window_frame",
+    "count": 4
+  }
+}

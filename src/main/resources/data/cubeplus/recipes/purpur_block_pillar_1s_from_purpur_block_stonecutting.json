@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:purpur_block"
+  },
+  "result": "cubeplus:purpur_block_pillar_1s",
+  "count": 1
+}

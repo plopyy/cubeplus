@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "cubeplus:iron_block_stairs_basic",
+    "count": 4
+  }
+}

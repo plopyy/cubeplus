@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:hay_block"
+  },
+  "result": "cubeplus:thatch_roof_border",
+  "count": 4
+}

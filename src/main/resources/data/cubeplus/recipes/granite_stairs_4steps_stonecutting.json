@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:granite"
+  },
+  "result": "cubeplus:granite_stairs_4steps",
+  "count": 1
+}

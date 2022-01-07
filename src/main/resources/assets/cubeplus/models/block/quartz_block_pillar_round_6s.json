@@ -1,0 +1,77 @@
+{
+    "textures": {
+        "particle": "block/quartz_block_side",
+        "stone_bricks": "block/quartz_block_side"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 5, 0, 6 ], 
+            "to": [ 6, 16, 10 ], 
+            "faces": {
+                "north": { "texture": "#stone_bricks", "uv": [ 10, 0, 11, 16 ] },
+                "south": { "texture": "#stone_bricks", "uv": [ 5, 0, 6, 16 ] },
+                "west": { "texture": "#stone_bricks", "uv": [ 6, 0, 10, 16 ] },
+                "up": { "texture": "#stone_bricks", "uv": [ 10, 6, 11, 10 ] },
+                "down": { "texture": "#stone_bricks", "uv": [ 0, 0, 1, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 6, 0, 5 ], 
+            "to": [ 10, 16, 11 ], 
+            "faces": {
+                "north": { "texture": "#stone_bricks", "uv": [ 6, 0, 10, 16 ] },
+                "east": { "texture": "#stone_bricks", "uv": [ 5, 0, 11, 16 ] },
+                "south": { "texture": "#stone_bricks", "uv": [ 6, 0, 10, 16 ] },
+                "west": { "texture": "#stone_bricks", "uv": [ 5, 0, 11, 16 ] },
+                "up": { "texture": "#stone_bricks", "uv": [ 6, 5, 10, 11 ] },
+                "down": { "texture": "#stone_bricks", "uv": [ 0, 0, 4, 6 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 10, 0, 6 ], 
+            "to": [ 11, 16, 10 ], 
+            "faces": {
+                "north": { "texture": "#stone_bricks", "uv": [ 5, 0, 6, 16 ] },
+                "east": { "texture": "#stone_bricks", "uv": [ 6, 0, 10, 16 ] },
+                "south": { "texture": "#stone_bricks", "uv": [ 10, 0, 11, 16 ] },
+                "up": { "texture": "#stone_bricks", "uv": [ 5, 6, 6, 10 ] },
+                "down": { "texture": "#stone_bricks", "uv": [ 0, 0, 1, 4 ] }
+            }
+        }
+    ]
+}

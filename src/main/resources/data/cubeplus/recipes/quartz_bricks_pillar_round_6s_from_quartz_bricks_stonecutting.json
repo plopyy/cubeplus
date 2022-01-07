@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:quartz_bricks"
+  },
+  "result": "cubeplus:quartz_bricks_pillar_round_6s",
+  "count": 1
+}

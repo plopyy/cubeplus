@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/iron_block_pillar_1s" },
+        "axis=z":  { "model": "cubeplus:block/iron_block_pillar_1s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/iron_block_pillar_1s", "x": 90, "y": 90 }
+    }
+}

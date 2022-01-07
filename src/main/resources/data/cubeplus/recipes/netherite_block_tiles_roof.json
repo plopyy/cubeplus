@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:red_nether_brick_slab"
+    },
+    "Y": {
+      "item": "cubeplus:netherite_block_stairs_4steps"
+    }
+  },
+  "result": {
+    "item": "cubeplus:netherite_block_tiles_roof",
+    "count": 1
+  }
+}

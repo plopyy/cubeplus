@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/amethyst_block_pillar_4s" },
+        "axis=z":  { "model": "cubeplus:block/amethyst_block_pillar_4s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/amethyst_block_pillar_4s", "x": 90, "y": 90 }
+    }
+}

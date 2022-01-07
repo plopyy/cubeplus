@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:deepslate_bricks"
+  },
+  "result": "cubeplus:deepslate_bricks_pillar_round_6s",
+  "count": 1
+}

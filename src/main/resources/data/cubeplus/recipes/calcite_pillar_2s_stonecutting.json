@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:calcite"
+  },
+  "result": "cubeplus:calcite_pillar_2s",
+  "count": 1
+}

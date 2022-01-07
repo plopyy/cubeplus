@@ -1,0 +1,90 @@
+{
+	"textures": {
+		"particle": "block/red_nether_bricks",
+		"tiles": "block/red_nether_bricks"
+	},
+	"elements": [
+		{
+			"name": "tile_1",
+			"from": [14, -1.5, 0],
+			"to": [21, 1, 4],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [25, 8, 8]},
+			"faces": {
+				"north": {"uv": [9, 4, 2, 6.5], "texture": "#tiles"},
+				"east": {"uv": [9, 4, 5, 6.5], "texture": "#tiles"},
+				"south": {"uv": [15, 4, 8, 6.5], "texture": "#tiles"},
+				"west": {"uv": [15, 8, 11, 10.5], "texture": "#tiles"},
+				"up": {"uv": [12, 7, 16, 0], "rotation": 90, "texture": "#tiles"},
+				"down": {"uv": [0, 11, 4, 4], "rotation": 270, "texture": "#tiles"}
+			}
+		},
+		{
+			"name": "tile_2",
+			"from": [10, 2.5, 0],
+			"to": [17, 5, 4],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [21, 12, 8]},
+			"faces": {
+				"north": {"uv": [9, 4, 2, 6.5], "texture": "#tiles"},
+				"east": {"uv": [9, 4, 5, 6.5], "texture": "#tiles"},
+				"south": {"uv": [15, 4, 8, 6.5], "texture": "#tiles"},
+				"west": {"uv": [15, 8, 11, 10.5], "texture": "#tiles"},
+				"up": {"uv": [12, 7, 16, 0], "rotation": 90, "texture": "#tiles"},
+				"down": {"uv": [0, 11, 4, 4], "rotation": 270, "texture": "#tiles"}
+			}
+		},
+		{
+			"name": "tile_3",
+			"from": [6, 6.5, 0],
+			"to": [13, 9, 4],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [17, 16, 8]},
+			"faces": {
+				"north": {"uv": [9, 4, 2, 6.5], "texture": "#tiles"},
+				"east": {"uv": [9, 4, 5, 6.5], "texture": "#tiles"},
+				"south": {"uv": [15, 4, 8, 6.5], "texture": "#tiles"},
+				"west": {"uv": [15, 8, 11, 10.5], "texture": "#tiles"},
+				"up": {"uv": [12, 7, 16, 0], "rotation": 90, "texture": "#tiles"},
+				"down": {"uv": [0, 11, 4, 4], "rotation": 90, "texture": "#tiles"}
+			}
+		},
+		{
+			"name": "tile_4",
+			"from": [2, 10.5, 0],
+			"to": [9, 13, 4],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [13, 20, 8]},
+			"faces": {
+				"north": {"uv": [9, 4, 2, 6.5], "texture": "#tiles"},
+				"east": {"uv": [9, 4, 5, 6.5], "texture": "#tiles"},
+				"south": {"uv": [15, 4, 8, 6.5], "texture": "#tiles"},
+				"west": {"uv": [15, 8, 11, 10.5], "texture": "#tiles"},
+				"up": {"uv": [12, 7, 16, 0], "rotation": 90, "texture": "#tiles"},
+				"down": {"uv": [0, 11, 4, 4], "rotation": 270, "texture": "#tiles"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 315, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 315, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 45, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"rotation": [0, 180, 0]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0]
+		}
+	}
+}

@@ -1,0 +1,124 @@
+{
+    "textures": {
+        "particle": "block/exposed_cut_copper",
+        "exposed_cut_copper": "block/exposed_cut_copper"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 4, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 0, 12, 16, 16 ] },
+                "east": { "texture": "#exposed_cut_copper", "uv": [ 0, 12, 16, 16 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 0, 12, 16, 16 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 0, 12, 16, 16 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4, 4, 0 ], 
+            "to": [ 16, 8, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 0, 8, 12, 12 ] },
+                "east": { "texture": "#exposed_cut_copper", "uv": [ 0, 8, 16, 12 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 4, 8, 16, 12 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 0, 8, 16, 12 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 4, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 8, 8, 0 ], 
+            "to": [ 16, 12, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 0, 4, 8, 8 ] },
+                "east": { "texture": "#exposed_cut_copper", "uv": [ 0, 4, 16, 8 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 8, 4, 16, 8 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 0, 4, 16, 8 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 8, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 12, 12, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 4, 4 ] },
+                "east": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 16, 4 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 12, 0, 16, 4 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 16, 4 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 12, 0, 16, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 4, 4 ], 
+            "to": [ 4, 8, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 12, 8, 16, 12 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 0, 8, 4, 12 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 4, 8, 16, 12 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 0, 4, 4, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 8, 8 ], 
+            "to": [ 8, 12, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 8, 4, 16, 8 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 0, 4, 8, 8 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 8, 4, 16, 8 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 0, 8, 8, 16 ] },
+                "down": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 8, 8 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 0, 12, 12 ], 
+            "to": [ 12, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#exposed_cut_copper", "uv": [ 4, 0, 16, 4 ] },
+                "south": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 12, 4 ] },
+                "west": { "texture": "#exposed_cut_copper", "uv": [ 12, 0, 16, 4 ] },
+                "up": { "texture": "#exposed_cut_copper", "uv": [ 0, 12, 12, 16 ] },
+                "down": { "texture": "#exposed_cut_copper", "uv": [ 0, 0, 12, 4 ] }
+            }
+        }
+    ]
+}

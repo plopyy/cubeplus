@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stone_bricks"
+  },
+  "result": "cubeplus:stone_bricks_arrow_slit_rounded",
+  "count": 1
+}

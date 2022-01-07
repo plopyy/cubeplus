@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:amethyst_block"
+  },
+  "result": "cubeplus:amethyst_block_stairs_basic",
+  "count": 1
+}

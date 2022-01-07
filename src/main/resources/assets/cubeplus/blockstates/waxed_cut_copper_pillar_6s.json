@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/waxed_cut_copper_pillar_6s" },
+        "axis=z":  { "model": "cubeplus:block/waxed_cut_copper_pillar_6s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/waxed_cut_copper_pillar_6s", "x": 90, "y": 90 }
+    }
+}

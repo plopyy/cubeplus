@@ -1,0 +1,98 @@
+{
+    "textures": {
+        "particle": "minecraft:block/acacia_planks",
+        "glass": "minecraft:block/glass",
+        "planks": "minecraft:block/acacia_planks"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 6 ], 
+            "to": [ 1, 16, 10 ], 
+            "faces": {
+                "north": { "texture": "#planks", "uv": [ 0, 0, 1, 16 ] },
+                "east": { "texture": "#planks", "uv": [ 0, 0, 4, 16 ] },
+                "south": { "texture": "#planks", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#planks", "uv": [ 0, 0, 4, 16 ] },
+                "up": { "texture": "#planks", "uv": [ 0, 0, 1, 4 ] },
+                "down": { "texture": "#planks", "uv": [ 0, 0, 1, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 15, 0, 6 ], 
+            "to": [ 16, 16, 10 ], 
+            "faces": {
+                "north": { "texture": "#planks", "uv": [ 15, 0, 16, 16 ] },
+                "east": { "texture": "#planks", "uv": [ 0, 0, 4, 16 ] },
+                "south": { "texture": "#planks", "uv": [ 15, 0, 16, 16 ] },
+                "west": { "texture": "#planks", "uv": [ 0, 0, 4, 16 ] },
+                "up": { "texture": "#planks", "uv": [ 0, 0, 1, 4 ] },
+                "down": { "texture": "#planks", "uv": [ 0, 0, 1, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 0, 6 ], 
+            "to": [ 15, 1, 10 ], 
+            "faces": {
+                "north": { "texture": "#planks", "uv": [ 1, 15, 15, 16 ] },
+                "south": { "texture": "#planks", "uv": [ 1, 16, 15, 15 ] },
+                "up": { "texture": "#planks", "uv": [ 1, 12, 15, 16 ] },
+                "down": { "texture": "#planks", "uv": [ 1, 12, 15, 16 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 15, 6 ], 
+            "to": [ 15, 16, 10 ], 
+            "faces": {
+                "north": { "texture": "#planks", "uv": [ 1, 0, 15, 1 ] },
+                "south": { "texture": "#planks", "uv": [ 1, 0, 15, 1 ] },
+                "up": { "texture": "#planks", "uv": [ 1, 0, 15, 4 ] },
+                "down": { "texture": "#planks", "uv": [ 1, 0, 15, 4 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 1, 1, 7.75 ], 
+            "to": [ 15, 15, 8.25 ], 
+            "faces": {
+                "north": { "texture": "#glass", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#glass", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+    ]
+}

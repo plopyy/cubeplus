@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Y#",
+    "#Y"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "Y": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "cubeplus:window_square_glass_pane",
+    "count": 4
+  }
+}

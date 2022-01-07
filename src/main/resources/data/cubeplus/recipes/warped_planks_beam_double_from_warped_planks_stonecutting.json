@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:warped_planks"
+  },
+  "result": "cubeplus:warped_planks_beam_double",
+  "count": 1
+}

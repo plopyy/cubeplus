@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "cubeplus:window_simple_glass_pane",
+    "cubeplus:window_square_glass_pane",
+    "cubeplus:acacia_window_frame",
+    "cubeplus:acacia_planks_wood_square_window",
+    "cubeplus:acacia_planks_wood_simple_window",
+    "cubeplus:birch_window_frame",
+    "cubeplus:birch_planks_wood_square_window",
+    "cubeplus:birch_planks_wood_simple_window",
+    "cubeplus:crimson_window_frame",
+    "cubeplus:crimson_planks_wood_square_window",
+    "cubeplus:crimson_planks_wood_simple_window",
+    "cubeplus:dark_oak_window_frame",
+    "cubeplus:dark_oak_planks_wood_square_window",
+    "cubeplus:dark_oak_planks_wood_simple_window",
+    "cubeplus:jungle_window_frame",
+    "cubeplus:jungle_planks_wood_square_window",
+    "cubeplus:jungle_planks_wood_simple_window",
+    "cubeplus:oak_window_frame",
+    "cubeplus:oak_planks_wood_square_window",
+    "cubeplus:oak_planks_wood_simple_window",
+    "cubeplus:spruce_window_frame",
+    "cubeplus:spruce_planks_wood_square_window",
+    "cubeplus:spruce_planks_wood_simple_window",
+    "cubeplus:warped_window_frame",
+    "cubeplus:warped_planks_wood_square_window",
+    "cubeplus:warped_planks_wood_simple_window"
+  ]
+}

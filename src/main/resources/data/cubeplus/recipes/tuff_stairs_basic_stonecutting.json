@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:tuff"
+  },
+  "result": "cubeplus:tuff_stairs_basic",
+  "count": 1
+}

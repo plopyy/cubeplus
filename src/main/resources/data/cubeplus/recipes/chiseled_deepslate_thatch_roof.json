@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_slab"
+    },
+    "Y": {
+      "item": "cubeplus:chiseled_deepslate_stairs_4steps"
+    }
+  },
+  "result": {
+    "item": "cubeplus:chiseled_deepslate_thatch_roof",
+    "count": 1
+  }
+}

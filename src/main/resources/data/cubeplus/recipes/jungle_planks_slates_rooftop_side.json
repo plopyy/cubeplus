@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:slates_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "result": {
+    "item": "cubeplus:jungle_planks_slates_rooftop_side",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:chiseled_deepslate"
+  },
+  "result": "cubeplus:chiseled_deepslate_pillar_2s",
+  "count": 1
+}

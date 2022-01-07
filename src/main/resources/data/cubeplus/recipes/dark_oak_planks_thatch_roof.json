@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_slab"
+    },
+    "Y": {
+      "item": "cubeplus:dark_oak_planks_stairs_4steps"
+    }
+  },
+  "result": {
+    "item": "cubeplus:dark_oak_planks_thatch_roof",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"variants": {
+        "facing=west,hside=left,sneak=false":  { "model": "cubeplus:block/jungle_planks_beam_single_left" },
+        "facing=north,hside=left,sneak=false": { "model": "cubeplus:block/jungle_planks_beam_single_left", "y": 90 },
+        "facing=east,hside=left,sneak=false":  { "model": "cubeplus:block/jungle_planks_beam_single_left", "y": 180 },
+        "facing=south,hside=left,sneak=false": { "model": "cubeplus:block/jungle_planks_beam_single_left", "y": 270 },
+        "facing=west,hside=left,sneak=true":  { "model": "cubeplus:block/jungle_planks_beam_single_left_down" },
+        "facing=north,hside=left,sneak=true": { "model": "cubeplus:block/jungle_planks_beam_single_left_down", "y": 90 },
+        "facing=east,hside=left,sneak=true":  { "model": "cubeplus:block/jungle_planks_beam_single_left_down", "y": 180 },
+        "facing=south,hside=left,sneak=true": { "model": "cubeplus:block/jungle_planks_beam_single_left_down", "y": 270 },
+        "facing=west,hside=right,sneak=false":  { "model": "cubeplus:block/jungle_planks_beam_single_right" },
+        "facing=north,hside=right,sneak=false": { "model": "cubeplus:block/jungle_planks_beam_single_right", "y": 90 },
+        "facing=east,hside=right,sneak=false":  { "model": "cubeplus:block/jungle_planks_beam_single_right", "y": 180 },
+        "facing=south,hside=right,sneak=false": { "model": "cubeplus:block/jungle_planks_beam_single_right", "y": 270 },
+        "facing=west,hside=right,sneak=true":  { "model": "cubeplus:block/jungle_planks_beam_single_right_down" },
+        "facing=north,hside=right,sneak=true": { "model": "cubeplus:block/jungle_planks_beam_single_right_down", "y": 90 },
+        "facing=east,hside=right,sneak=true":  { "model": "cubeplus:block/jungle_planks_beam_single_right_down", "y": 180 },
+        "facing=south,hside=right,sneak=true": { "model": "cubeplus:block/jungle_planks_beam_single_right_down", "y": 270 }
+	}
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/deepslate_bricks_pillar_6s" },
+        "axis=z":  { "model": "cubeplus:block/deepslate_bricks_pillar_6s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/deepslate_bricks_pillar_6s", "x": 90, "y": 90 }
+    }
+}

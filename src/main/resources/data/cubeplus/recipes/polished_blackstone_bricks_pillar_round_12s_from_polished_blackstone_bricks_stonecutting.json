@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:polished_blackstone_bricks"
+  },
+  "result": "cubeplus:polished_blackstone_bricks_pillar_round_12s",
+  "count": 1
+}

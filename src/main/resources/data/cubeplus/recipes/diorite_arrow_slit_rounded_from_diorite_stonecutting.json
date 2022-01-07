@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:diorite"
+  },
+  "result": "cubeplus:diorite_arrow_slit_rounded",
+  "count": 1
+}

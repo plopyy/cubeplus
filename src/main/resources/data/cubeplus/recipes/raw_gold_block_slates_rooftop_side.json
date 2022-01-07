@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:slates_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:raw_gold_block"
+    }
+  },
+  "result": {
+    "item": "cubeplus:raw_gold_block_slates_rooftop_side",
+    "count": 2
+  }
+}

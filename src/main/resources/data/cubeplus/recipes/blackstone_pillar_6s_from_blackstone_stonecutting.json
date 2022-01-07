@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:blackstone"
+  },
+  "result": "cubeplus:blackstone_pillar_6s",
+  "count": 1
+}

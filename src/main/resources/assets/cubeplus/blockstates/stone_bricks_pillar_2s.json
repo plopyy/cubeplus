@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/stone_bricks_pillar_2s" },
+        "axis=z":  { "model": "cubeplus:block/stone_bricks_pillar_2s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/stone_bricks_pillar_2s", "x": 90, "y": 90 }
+    }
+}

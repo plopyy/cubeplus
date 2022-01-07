@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:polished_blackstone_bricks"
+  },
+  "result": "cubeplus:slates_rooftop_border",
+  "count": 4
+}

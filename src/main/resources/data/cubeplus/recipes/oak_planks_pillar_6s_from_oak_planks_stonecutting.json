@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:oak_planks"
+  },
+  "result": "cubeplus:oak_planks_pillar_6s",
+  "count": 1
+}

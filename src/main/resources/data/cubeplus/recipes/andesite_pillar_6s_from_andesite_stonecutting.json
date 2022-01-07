@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:andesite"
+  },
+  "result": "cubeplus:andesite_pillar_6s",
+  "count": 1
+}

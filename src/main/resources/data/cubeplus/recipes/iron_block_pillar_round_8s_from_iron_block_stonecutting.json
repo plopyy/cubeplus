@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:iron_block"
+  },
+  "result": "cubeplus:iron_block_pillar_round_8s",
+  "count": 1
+}

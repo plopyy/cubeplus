@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:polished_blackstone_brick_slab"
+    },
+    "Y": {
+      "item": "cubeplus:dark_oak_planks_stairs_4steps"
+    }
+  },
+  "result": {
+    "item": "cubeplus:dark_oak_planks_slates_roof",
+    "count": 1
+  }
+}

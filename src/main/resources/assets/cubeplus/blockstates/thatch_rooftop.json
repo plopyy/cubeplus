@@ -1,0 +1,33 @@
+{
+	"variants": {
+        "facing=east,roofshape=none":  { "model": "cubeplus:block/thatch_rooftop_none" },
+        "facing=west,roofshape=none":  { "model": "cubeplus:block/thatch_rooftop_none" },
+        "facing=south,roofshape=none": { "model": "cubeplus:block/thatch_rooftop_none" },
+        "facing=north,roofshape=none": { "model": "cubeplus:block/thatch_rooftop_none" },
+        
+        "facing=east,roofshape=one":  { "model": "cubeplus:block/thatch_rooftop_one", "y": 270 },
+        "facing=west,roofshape=one":  { "model": "cubeplus:block/thatch_rooftop_one", "y": 90 },
+        "facing=south,roofshape=one": { "model": "cubeplus:block/thatch_rooftop_one" },
+        "facing=north,roofshape=one": { "model": "cubeplus:block/thatch_rooftop_one", "y": 180 },
+        
+        "facing=east,roofshape=two":  { "model": "cubeplus:block/thatch_rooftop_two", "y": 270 },
+        "facing=west,roofshape=two":  { "model": "cubeplus:block/thatch_rooftop_two", "y": 90 },
+        "facing=south,roofshape=two": { "model": "cubeplus:block/thatch_rooftop_two" },
+        "facing=north,roofshape=two": { "model": "cubeplus:block/thatch_rooftop_two", "y": 180 },
+        
+        "facing=east,roofshape=three":  { "model": "cubeplus:block/thatch_rooftop_three", "y": 270 },
+        "facing=west,roofshape=three":  { "model": "cubeplus:block/thatch_rooftop_three", "y": 90 },
+        "facing=south,roofshape=three": { "model": "cubeplus:block/thatch_rooftop_three" },
+        "facing=north,roofshape=three": { "model": "cubeplus:block/thatch_rooftop_three", "y": 180 },
+        
+        "facing=east,roofshape=four":  { "model": "cubeplus:block/thatch_rooftop_four" },
+        "facing=west,roofshape=four":  { "model": "cubeplus:block/thatch_rooftop_four" },
+        "facing=south,roofshape=four": { "model": "cubeplus:block/thatch_rooftop_four" },
+        "facing=north,roofshape=four": { "model": "cubeplus:block/thatch_rooftop_four" },
+        
+        "facing=east,roofshape=side":  { "model": "cubeplus:block/thatch_rooftop_side" },
+        "facing=west,roofshape=side":  { "model": "cubeplus:block/thatch_rooftop_side" },
+        "facing=south,roofshape=side": { "model": "cubeplus:block/thatch_rooftop_side", "y": 90 },
+        "facing=north,roofshape=side": { "model": "cubeplus:block/thatch_rooftop_side", "y": 90 }
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:polished_blackstone_brick_slab"
+    },
+    "Y": {
+      "item": "cubeplus:polished_diorite_stairs_4steps"
+    }
+  },
+  "result": {
+    "item": "cubeplus:polished_diorite_slates_roof",
+    "count": 1
+  }
+}

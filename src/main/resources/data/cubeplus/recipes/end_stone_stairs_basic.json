@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "cubeplus:end_stone_stairs_basic",
+    "count": 4
+  }
+}

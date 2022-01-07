@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=east,hside=left":  { "model": "cubeplus:block/tiles_roof_border_right", "y": 90 },
+        "facing=west,hside=left":  { "model": "cubeplus:block/tiles_roof_border_right", "y": 270 },
+        "facing=south,hside=left": { "model": "cubeplus:block/tiles_roof_border_right", "y": 180 },
+        "facing=north,hside=left": { "model": "cubeplus:block/tiles_roof_border_right" },
+        "facing=east,hside=right":  { "model": "cubeplus:block/tiles_roof_border_left", "y": 90 },
+        "facing=west,hside=right":  { "model": "cubeplus:block/tiles_roof_border_left", "y": 270 },
+        "facing=south,hside=right": { "model": "cubeplus:block/tiles_roof_border_left", "y": 180 },
+        "facing=north,hside=right": { "model": "cubeplus:block/tiles_roof_border_left" }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:diorite"
+  },
+  "result": "cubeplus:diorite_pillar_round_6s",
+  "count": 1
+}

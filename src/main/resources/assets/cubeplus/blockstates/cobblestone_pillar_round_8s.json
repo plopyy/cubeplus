@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "cubeplus:block/cobblestone_pillar_round_8s" },
+        "axis=z":  { "model": "cubeplus:block/cobblestone_pillar_round_8s", "x": 90 },
+        "axis=x":  { "model": "cubeplus:block/cobblestone_pillar_round_8s", "x": 90, "y": 90 }
+    }
+}

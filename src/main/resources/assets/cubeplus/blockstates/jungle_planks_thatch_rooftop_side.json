@@ -1,0 +1,8 @@
+{
+	"variants": {
+        "facing=east":  { "model": "cubeplus:block/jungle_planks_thatch_rooftop_side", "y": 90 },
+        "facing=west":  { "model": "cubeplus:block/jungle_planks_thatch_rooftop_side", "y": 90 },
+        "facing=south": { "model": "cubeplus:block/jungle_planks_thatch_rooftop_side" },
+        "facing=north": { "model": "cubeplus:block/jungle_planks_thatch_rooftop_side" }
+	}
+}
