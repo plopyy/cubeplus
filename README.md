@@ -3,7 +3,7 @@
 	<!--<a href="https://www.patreon.com/simibubi"><img src="https://img.shields.io/badge/Supporters-80-ff5733" alt="Patreon"></a>-->
 	<a href="https://www.curseforge.com/minecraft/mc-mods/create/files"><img src="https://img.shields.io/badge/Available%20for-MC%201.14%20to%201.18-c70039" alt="Supported Versions"></a>
 	<a href="https://github.com/Creators-of-Create/Create/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Creators-of-Create/Create?style=flat&color=900c3f" alt="License"></a>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/cubeplus"><img src="http://cf.way2muchnoise.eu/cubeplus.svg" alt="CF"></a><br><br>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/cubeplus"><img src="http://cf.way2muchnoise.eu/full_cubeplus_downloads.svg" alt="CF"></a><br><br>
 </h1>
 
 Welcome to Cube++, a mod offering a variety of new forms of blocks for Building, Decoration and Aesthetic.
