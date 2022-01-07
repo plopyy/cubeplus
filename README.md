@@ -12,7 +12,7 @@ The added elements of tech are designed to leave as many design choices to the p
 
 Check out the wiki for further info on how to use these features, and stay tuned for an ever-growing selection of possibilities for Minecraft.
 
-<!--[<img src="https://i.imgur.com/bjEZraY.jpg" width="200">](https://www.youtube.com/channel/UCrKV2QTuyGcv4E3eSJpBiYA/playlists "Watch Videos")-->
+[<img src="https://i.imgur.com/bjEZraY.jpg" width="200">](https://www.youtube.com/c/plopyy)
 [<img src="https://i.imgur.com/0lLX9Oy.jpg" width="200">](https://github.com/plopyy/cubeplus/issues "Report Issues")
 [<img src="https://i.imgur.com/xj8o2xC.jpg" width="200">](https://www.patreon.com/plopyy "Support Us")
 
