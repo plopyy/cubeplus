@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.imgur.com/nk378Cs.png" alt="Logo" width="200"></p>
 <h1 align="center">Cube++<br>
-	<!--<a href="https://www.patreon.com/simibubi"><img src="https://img.shields.io/badge/Supporters-80-ff5733" alt="Patreon"></a>-->
+	<a href="https://www.patreon.com/plopyy"><img src="https://img.shields.io/badge/Supporters-0-ff5733" alt="Patreon"></a>
 	<a href="https://www.curseforge.com/minecraft/mc-mods/create/files"><img src="https://img.shields.io/badge/Available%20for-MC%201.14%20to%201.18-c70039" alt="Supported Versions"></a>
 	<a href="https://github.com/Creators-of-Create/Create/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Creators-of-Create/Create?style=flat&color=900c3f" alt="License"></a>
   <a href="https://www.curseforge.com/minecraft/mc-mods/cubeplus"><img src="http://cf.way2muchnoise.eu/full_cubeplus_downloads.svg" alt="CF"></a><br><br>
@@ -14,7 +14,7 @@ Check out the wiki for further info on how to use these features, and stay tuned
 
 <!--[<img src="https://i.imgur.com/bjEZraY.jpg" width="200">](https://www.youtube.com/channel/UCrKV2QTuyGcv4E3eSJpBiYA/playlists "Watch Videos")-->
 [<img src="https://i.imgur.com/0lLX9Oy.jpg" width="200">](https://github.com/plopyy/cubeplus/issues "Report Issues")
-[<img src="https://i.imgur.com/xj8o2xC.jpg" width="200">](https://www.patreon.com/simibubi "Support Us")
+[<img src="https://i.imgur.com/xj8o2xC.jpg" width="200">](https://www.patreon.com/plopyy "Support Us")
 
 - Support for Minecraft 1.12: Not planned
 - Support for Fabric: Not planned
