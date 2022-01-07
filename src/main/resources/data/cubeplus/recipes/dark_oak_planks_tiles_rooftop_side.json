@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:tiles_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "result": {
+    "item": "cubeplus:dark_oak_planks_tiles_rooftop_side",
+    "count": 2
+  }
+}

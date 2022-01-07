@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:tiles_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:smooth_sandstone"
+    }
+  },
+  "result": {
+    "item": "cubeplus:smooth_sandstone_tiles_rooftop_side",
+    "count": 2
+  }
+}

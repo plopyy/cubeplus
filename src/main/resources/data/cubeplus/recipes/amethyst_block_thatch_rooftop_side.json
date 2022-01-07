@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "result": {
+    "item": "cubeplus:amethyst_block_thatch_rooftop_side",
+    "count": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:tiles_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:prismarine_bricks"
+    }
+  },
+  "result": {
+    "item": "cubeplus:prismarine_bricks_tiles_rooftop_side",
+    "count": 2
+  }
+}

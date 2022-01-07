@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:granite"
+    }
+  },
+  "result": {
+    "item": "cubeplus:granite_thatch_rooftop_side",
+    "count": 2
+  }
+}

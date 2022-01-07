@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:waxed_exposed_copper"
+    }
+  },
+  "result": {
+    "item": "cubeplus:waxed_exposed_copper_thatch_rooftop_side",
+    "count": 2
+  }
+}

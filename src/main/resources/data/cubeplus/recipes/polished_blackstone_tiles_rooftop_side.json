@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:tiles_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:polished_blackstone"
+    }
+  },
+  "result": {
+    "item": "cubeplus:polished_blackstone_tiles_rooftop_side",
+    "count": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:chiseled_deepslate"
+    }
+  },
+  "result": {
+    "item": "cubeplus:chiseled_deepslate_thatch_rooftop_side",
+    "count": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "Y"
+  ],
+  "key": {
+    "#": {
+      "item": "cubeplus:thatch_rooftop"
+    },
+    "Y": {
+      "item": "minecraft:crimson_planks"
+    }
+  },
+  "result": {
+    "item": "cubeplus:crimson_planks_thatch_rooftop_side",
+    "count": 2
+  }
+}
