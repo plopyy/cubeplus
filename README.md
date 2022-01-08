@@ -8,7 +8,7 @@
 
 Welcome to Cube++, a mod offering a variety of new forms of blocks for Building, Decoration and Aesthetic.
 
-The added elements of tech are designed to leave as many design choices to the player as possible, where item processing doesn't happen inside a single block with funny textures, it requires a set of actors working together in many possible arrangements.
+The added elements are designed to leave as many design choices to the player as possible to build, craft and make awesome project one minecraft.
 
 Check out the wiki for further info on how to use these features, and stay tuned for an ever-growing selection of possibilities for Minecraft.
 
