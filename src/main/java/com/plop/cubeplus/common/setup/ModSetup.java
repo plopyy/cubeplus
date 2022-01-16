@@ -1,6 +1,6 @@
 package com.plop.cubeplus.common.setup;
 
-import com.plop.cubeplus.CubePlus;
+/*import com.plop.cubeplus.CubePlus;
 import com.plop.cubeplus.common.RegistryHandler;
 import com.plop.cubeplus.common.renderer.cpNewRoofRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,4 +22,4 @@ public class ModSetup
     {
         event.registerBlockEntityRenderer(RegistryHandler.NEWROOF_ENTITYBLOCK.get(), cpNewRoofRenderer::new);
     }
-}
+}*/

@@ -17,7 +17,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class cpWindows extends Block {
+public class cpWindows extends Block
+{
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty SNEAKING = cpProperty.SNEAKING;
 

@@ -4,7 +4,6 @@ import com.google.common.collect.Lists;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 
@@ -14,6 +13,8 @@ public class cpItems
 {
 	public static final cpItems INSTANCE = new cpItems();
 	public static List<Item> items;
+
+	public static Item TROWEL;
 
 	public static Item WINDOW_SIMPLE_GLASS_PANE;
 	public static Item WINDOW_SQUARE_GLASS_PANE;
@@ -33,7 +34,8 @@ public class cpItems
 
         final Item.Properties properties = new Item.Properties().tab(TAB);
 
-        WINDOW_SIMPLE_GLASS_PANE = new cpItem("window_simple_glass_pane", properties);
+		TROWEL = new cpTrowel("trowel", properties);
+		WINDOW_SIMPLE_GLASS_PANE = new cpItem("window_simple_glass_pane", properties);
 		WINDOW_SQUARE_GLASS_PANE = new cpItem("window_square_glass_pane", properties);
 		ACACIA_WINDOW_FRAME = new cpItem("acacia_window_frame", properties);
 		BIRCH_WINDOW_FRAME = new cpItem("birch_window_frame", properties);

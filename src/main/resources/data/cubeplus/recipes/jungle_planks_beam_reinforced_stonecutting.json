@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:jungle_planks"
+  },
+  "result": "cubeplus:jungle_planks_beam_reinforced",
+  "count": 1
+}

@@ -33,6 +33,7 @@ public class cpBeamSupport extends Block
     public static final BooleanProperty SNEAKING = cpProperty.SNEAKING;
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
     public static final EnumProperty<HSide> HSIDE = cpProperty.HSIDE;
+    public static final BooleanProperty CENTERED = cpProperty.CENTERED;
     private int BEAM_TYPE = 0;
 
     public static final AABB BEAM_RIGHT = new AABB(0.75f, 0.00f, 0.00f, 1.00f, 1.00f, 0.25f);
@@ -52,6 +53,15 @@ public class cpBeamSupport extends Block
     public static final AABB TOP = new AABB(0.00f, 0.75f, 0.00f, 1.00f, 1.00f, 0.25f);
     public static final AABB TOP2 = new AABB(0.00f, 0.95f, 0.00f, 1.00f, 1.00f, 0.25f);
 
+    public static final AABB BEAM_CENTER = new AABB(0.375f, 0.00f, 0.375f, 0.625f, 1.00f, 0.625f);
+    public static final AABB BEAM_CENTER2 = new AABB(0.00f, 0.75f, 0.375f, 1.00f, 1.00f, 0.625f);
+    public static final AABB CENTER_LEFT = new AABB(0.625f, 0.75f, 0.375f, 1.00f, 1.00f, 0.625f);
+    public static final AABB CENTER_RIGHT = new AABB(0.00f, 0.75f, 0.375f, 0.375f, 1.00f, 0.625f);
+    public static final AABB CENTER_BACK = new AABB(0.375f, 0.75f, 0.625f, 0.625f, 1.00f, 1.00f);
+    public static final AABB CENTER_RIGHT2 = new AABB(0.625f, 0.95f, 0.375f, 1.00f, 1.00f, 0.625f);
+    public static final AABB CENTER_LEFT2 = new AABB(0.00f, 0.95f, 0.375f, 0.375f, 1.00f, 0.625f);
+    public static final AABB CENTER_BACK2 = new AABB(0.375f, 0.95f, 0.625f, 0.625f, 1.00f, 1.00f);
+
     private final Block modelBlock;
     private final BlockState modelState;
 
@@ -66,7 +76,8 @@ public class cpBeamSupport extends Block
                 .setValue(WATERLOGGED, Boolean.FALSE)
                 .setValue(SNEAKING, Boolean.FALSE)
                 .setValue(HALF, Half.BOTTOM)
-                .setValue(HSIDE, HSide.LEFT);
+                .setValue(HSIDE, HSide.LEFT)
+                .setValue(CENTERED, Boolean.FALSE);
 
         this.registerDefaultState(newState);
         this.modelBlock = state.getBlock();
@@ -78,6 +89,7 @@ public class cpBeamSupport extends Block
         Direction d     = state.getValue(FACING);
         Boolean sneak   = state.getValue(SNEAKING);
         Half h          = state.getValue(HALF);
+        Boolean center  = state.getValue(CENTERED);
 
         AABB rotShape = Step;
 
@@ -89,19 +101,32 @@ public class cpBeamSupport extends Block
         else if (d == Direction.WEST)
             rot = 3;
 
-        float fAdd = 0.0F;
+        if (sneak == Boolean.TRUE)
+        {
+            if (center == Boolean.FALSE)
+            {
+                if (BEAM_TYPE == 1 && h == Half.BOTTOM)
+                    rotShape = new AABB(1 - rotShape.minY, 1 - rotShape.minX, rotShape.minZ, 1 - rotShape.maxY, 1 - rotShape.maxX, rotShape.maxZ);
+                else if (BEAM_TYPE == 1 && h == Half.TOP && Render == Boolean.FALSE)
+                    rotShape = TOP;
+                else if (BEAM_TYPE == 1 && h == Half.TOP && Render == Boolean.TRUE)
+                    rotShape = TOP2;
+                else if (BEAM_TYPE >= 2)
+                    rotShape = new AABB(rotShape.minX, 1 - rotShape.minY, rotShape.minZ, rotShape.maxX, 1 - rotShape.maxY, rotShape.maxZ);
+            }
+            else
+            {
+                if (BEAM_TYPE == 1)
+                {
+                    rotShape = BEAM_CENTER2;
 
-        if ( Render == Boolean.TRUE )
-            fAdd = 0.2F;
+                    if (h == Half.TOP)
+                        rotShape = new AABB(rotShape.minX, 1 - rotShape.minY, rotShape.minZ, rotShape.maxX, 1 - rotShape.maxY, rotShape.maxZ);
+                }
 
-        if (BEAM_TYPE == 1 && sneak == Boolean.TRUE && h == Half.BOTTOM )
-            rotShape = new AABB(1-rotShape.minY, 1-rotShape.minX, rotShape.minZ, 1-rotShape.maxY, 1-rotShape.maxX, rotShape.maxZ);
-        else if (BEAM_TYPE == 1 && sneak == Boolean.TRUE && h == Half.TOP && Render == Boolean.FALSE )
-            rotShape = TOP;
-        else if (BEAM_TYPE == 1 && sneak == Boolean.TRUE && h == Half.TOP && Render == Boolean.TRUE )
-            rotShape = TOP2;
-        else if (BEAM_TYPE >= 2 && sneak == Boolean.TRUE)
-            rotShape = new AABB(rotShape.minX, 1-rotShape.minY, rotShape.minZ, rotShape.maxX, 1-rotShape.maxY, rotShape.maxZ);
+                rotShape = new AABB(rotShape.minX, 1 - rotShape.minY, rotShape.minZ, rotShape.maxX, 1 - rotShape.maxY, rotShape.maxZ);
+            }
+        }
 
         for (int n = 0; n < rot; n++)
             rotShape = new AABB(1 - rotShape.minZ, rotShape.minY, rotShape.minX, 1 - rotShape.maxZ, rotShape.maxY, rotShape.maxX);
@@ -112,49 +137,97 @@ public class cpBeamSupport extends Block
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter reader, BlockPos pos, CollisionContext context)
     {
+        Boolean center = state.getValue(CENTERED);
         HSide side = state.getValue(HSIDE);
-        if (BEAM_TYPE >= 2)
+
+        if (center == Boolean.FALSE)
         {
-            VoxelShape shape;
+            if (BEAM_TYPE >= 2)
+            {
+                VoxelShape shape;
 
-            if (side == HSide.RIGHT) // Right
-                shape = Shapes.joinUnoptimized(Rotate(state, BEAM_RIGHT, Boolean.FALSE), Rotate(state, TOP1_RIGHT, Boolean.FALSE), BooleanOp.NOT_SAME);
-            else // left
-                shape = Shapes.joinUnoptimized(Rotate(state, BEAM_LEFT, Boolean.FALSE), Rotate(state, TOP1_LEFT, Boolean.FALSE), BooleanOp.NOT_SAME);
+                if (side == HSide.RIGHT) // Right
+                    shape = Shapes.joinUnoptimized(Rotate(state, BEAM_RIGHT, Boolean.FALSE), Rotate(state, TOP1_RIGHT, Boolean.FALSE), BooleanOp.NOT_SAME);
+                else // left
+                    shape = Shapes.joinUnoptimized(Rotate(state, BEAM_LEFT, Boolean.FALSE), Rotate(state, TOP1_LEFT, Boolean.FALSE), BooleanOp.NOT_SAME);
 
-            if (BEAM_TYPE == 3 && side == HSide.RIGHT)
-                shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP3_RIGHT, Boolean.FALSE), BooleanOp.NOT_SAME);
-            else if (BEAM_TYPE == 3 && side == HSide.LEFT)
-                shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP3_LEFT, Boolean.FALSE), BooleanOp.NOT_SAME);
+                if (BEAM_TYPE == 3 && side == HSide.RIGHT)
+                    shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP3_RIGHT, Boolean.FALSE), BooleanOp.NOT_SAME);
+                else if (BEAM_TYPE == 3 && side == HSide.LEFT)
+                    shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP3_LEFT, Boolean.FALSE), BooleanOp.NOT_SAME);
 
-            return shape;
+                return shape;
+            }
+            else
+                return Rotate(state, BEAM_RIGHT, Boolean.FALSE);
         }
+        else
+        {
+            if (BEAM_TYPE >= 2)
+            {
+                VoxelShape shape;
 
-        return Rotate(state, BEAM_RIGHT, Boolean.FALSE);
+                if (side == HSide.RIGHT) // Right
+                    shape = Shapes.joinUnoptimized(Shapes.create(BEAM_CENTER), Rotate(state, CENTER_RIGHT, Boolean.FALSE), BooleanOp.NOT_SAME);
+                else // left
+                    shape = Shapes.joinUnoptimized(Shapes.create(BEAM_CENTER), Rotate(state, CENTER_LEFT, Boolean.FALSE), BooleanOp.NOT_SAME);
+
+                if (BEAM_TYPE == 3)
+                    shape = Shapes.joinUnoptimized(shape, Rotate(state, CENTER_BACK, Boolean.FALSE), BooleanOp.NOT_SAME);
+
+                return shape;
+            }
+            else
+                return Rotate(state, BEAM_CENTER, Boolean.FALSE);
+        }
     }
 
     @Override
     public VoxelShape getCollisionShape(BlockState state, BlockGetter reader, BlockPos pos, CollisionContext context)
     {
+        Boolean center = state.getValue(CENTERED);
         HSide side = state.getValue(HSIDE);
-        if (BEAM_TYPE >= 2)
+
+        if (center == Boolean.FALSE)
         {
-            VoxelShape shape;
+            if (BEAM_TYPE >= 2)
+            {
+                VoxelShape shape;
 
-            if (side == HSide.RIGHT) // Right
-                shape = Shapes.joinUnoptimized(Rotate(state, BEAM_RIGHT, Boolean.TRUE), Rotate(state, TOP2_RIGHT, Boolean.TRUE), BooleanOp.NOT_SAME);
-            else // left
-                shape = Shapes.joinUnoptimized(Rotate(state, BEAM_LEFT, Boolean.TRUE), Rotate(state, TOP2_LEFT, Boolean.TRUE), BooleanOp.NOT_SAME);
+                if (side == HSide.RIGHT) // Right
+                    shape = Shapes.joinUnoptimized(Rotate(state, BEAM_RIGHT, Boolean.TRUE), Rotate(state, TOP2_RIGHT, Boolean.TRUE), BooleanOp.NOT_SAME);
+                else // left
+                    shape = Shapes.joinUnoptimized(Rotate(state, BEAM_LEFT, Boolean.TRUE), Rotate(state, TOP2_LEFT, Boolean.TRUE), BooleanOp.NOT_SAME);
 
-            if (BEAM_TYPE == 3 && side == HSide.RIGHT)
-                shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP4_RIGHT, Boolean.TRUE), BooleanOp.NOT_SAME);
-            if (BEAM_TYPE == 3 && side == HSide.LEFT)
-                shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP4_LEFT, Boolean.TRUE), BooleanOp.NOT_SAME);
+                if (BEAM_TYPE == 3 && side == HSide.RIGHT)
+                    shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP4_RIGHT, Boolean.TRUE), BooleanOp.NOT_SAME);
+                if (BEAM_TYPE == 3 && side == HSide.LEFT)
+                    shape = Shapes.joinUnoptimized(shape, Rotate(state, TOP4_LEFT, Boolean.TRUE), BooleanOp.NOT_SAME);
 
-            return shape;
+                return shape;
+            }
+            else
+                return Rotate(state, BEAM_RIGHT, Boolean.TRUE);
         }
+        else
+        {
+            if (BEAM_TYPE >= 2)
+            {
+                VoxelShape shape;
 
-        return Rotate(state, BEAM_RIGHT, Boolean.TRUE);
+                if (side == HSide.RIGHT) // Right
+                    shape = Shapes.joinUnoptimized(Shapes.create(BEAM_CENTER), Rotate(state, CENTER_RIGHT2, Boolean.TRUE), BooleanOp.NOT_SAME);
+                else // left
+                    shape = Shapes.joinUnoptimized(Shapes.create(BEAM_CENTER), Rotate(state, CENTER_LEFT2, Boolean.TRUE), BooleanOp.NOT_SAME);
+
+                if (BEAM_TYPE == 3)
+                    shape = Shapes.joinUnoptimized(shape, Rotate(state, CENTER_BACK2, Boolean.TRUE), BooleanOp.NOT_SAME);
+
+                return shape;
+            }
+            else
+                return Rotate(state, BEAM_CENTER, Boolean.TRUE);
+        }
     }
 
     public BlockState getStateForPlacement(BlockPlaceContext context)
@@ -178,7 +251,8 @@ public class cpBeamSupport extends Block
                 .setValue(WATERLOGGED, ifluidstate.getType() == Fluids.WATER)
                 .setValue(SNEAKING, sneak)
                 .setValue(HALF, h)
-                .setValue(HSIDE, hside);
+                .setValue(HSIDE, hside)
+                .setValue(CENTERED, Boolean.FALSE);
 
         return blockstate;
     }
@@ -206,7 +280,7 @@ public class cpBeamSupport extends Block
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder)
     {
-        builder.add(FACING, WATERLOGGED, SNEAKING, HSIDE, HALF);
+        builder.add(FACING, WATERLOGGED, SNEAKING, HSIDE, HALF, CENTERED);
     }
 }
 

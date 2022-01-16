@@ -4,7 +4,7 @@ import com.plop.cubeplus.common.config.Config;
 import com.plop.cubeplus.common.DynBlock.FormMats;
 import com.plop.cubeplus.common.RegistryHandler;
 import com.plop.cubeplus.common.item.cpItems;
-import com.plop.cubeplus.common.renderer.cpNewRoofRenderer;
+//import com.plop.cubeplus.common.renderer.cpNewRoofRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.texture.TextureAtlas;
@@ -51,7 +51,7 @@ public class CubePlus
     public static final CreativeModeTab TAB = new CreativeModeTab("TabName")
     {
         @Override
-        public ItemStack makeIcon(){return new ItemStack(RegistryHandler.STONE_STAIRS_4STEPS.get());}
+        public ItemStack makeIcon(){return new ItemStack(cpItems.TROWEL);}
     };
 
     public CubePlus()
@@ -85,8 +85,8 @@ public class CubePlus
         if(!event.getAtlas().location().equals(TextureAtlas.LOCATION_BLOCKS))
             return;
 
-        event.addSprite(cpNewRoofRenderer.TEXTURE1);
-        event.addSprite(cpNewRoofRenderer.TEXTURE2);
+//        event.addSprite(cpNewRoofRenderer.TEXTURE1);
+//        event.addSprite(cpNewRoofRenderer.TEXTURE2);
     }
 
     @SubscribeEvent

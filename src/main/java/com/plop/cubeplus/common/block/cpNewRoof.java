@@ -1,6 +1,6 @@
 package com.plop.cubeplus.common.block;
 
-import com.plop.cubeplus.common.blockentity.cpNewRoofEntity;
+/*import com.plop.cubeplus.common.blockentity.cpNewRoofEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.BaseEntityBlock;
@@ -39,4 +39,4 @@ public class cpNewRoof extends BaseEntityBlock
     {
         return RenderShape.MODEL;
     }
-}
+}*/

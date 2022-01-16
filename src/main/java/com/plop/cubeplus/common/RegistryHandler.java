@@ -3,7 +3,7 @@ package com.plop.cubeplus.common;
 import com.plop.cubeplus.CubePlus;
 import com.plop.cubeplus.common.DynBlock.FormBlock;
 import com.plop.cubeplus.common.block.*;
-import com.plop.cubeplus.common.blockentity.cpNewRoofEntity;
+import com.plop.cubeplus.common.item.cpTrowel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
@@ -15,7 +15,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import java.util.Arrays;
+/*import com.plop.cubeplus.common.blockentity.cpNewRoofEntity;
+import net.minecraftforge.registries.ObjectHolder;
+import java.util.Collection;
+import java.util.Collections;*/
 
+import static com.plop.cubeplus.CubePlus.TAB;
 import static com.plop.cubeplus.common.DynBlock.FormBlock.IsNewBasicStairs;
 
 public class RegistryHandler
@@ -41,9 +46,12 @@ public class RegistryHandler
         FormBlock.RegistryForm(FormBlock.FORM.PILLAR_ROUND_12S, "pillar_round_12s", Arrays.asList(FormBlock.MATERIAL.ROCK, FormBlock.MATERIAL.METAL, FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.STAIRS_4STEPS, "stairs_4steps", Arrays.asList(FormBlock.MATERIAL.ROCK, FormBlock.MATERIAL.METAL, FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.STAIRS_BASIC, "stairs_basic", Arrays.asList(FormBlock.MATERIAL.ROCK, FormBlock.MATERIAL.METAL, FormBlock.MATERIAL.WOOD) );
-        FormBlock.RegistryForm(FormBlock.FORM.BEAM_SINGLE, "beam_single", Arrays.asList(FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.BEAM, "beam", Arrays.asList(FormBlock.MATERIAL.WOOD) );
+        FormBlock.RegistryForm(FormBlock.FORM.BEAM_SINGLE, "beam_single", Arrays.asList(FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.BEAM_DOUBLE, "beam_double", Arrays.asList(FormBlock.MATERIAL.WOOD) );
+        FormBlock.RegistryForm(FormBlock.FORM.BEAM_REINFORCED, "beam_reinforced", Arrays.asList(FormBlock.MATERIAL.WOOD) );
+        FormBlock.RegistryForm(FormBlock.FORM.BEAM_REINFORCED_SINGLE, "beam_reinforced_single", Arrays.asList(FormBlock.MATERIAL.WOOD) );
+        FormBlock.RegistryForm(FormBlock.FORM.BEAM_REINFORCED_DOUBLE, "beam_reinforced_double", Arrays.asList(FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.ARROW_SLIT, "arrow_slit", Arrays.asList(FormBlock.MATERIAL.ROCK, FormBlock.MATERIAL.METAL, FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.ARROW_SLIT_ROUNDED, "arrow_slit_rounded", Arrays.asList(FormBlock.MATERIAL.ROCK, FormBlock.MATERIAL.METAL, FormBlock.MATERIAL.WOOD) );
         FormBlock.RegistryForm(FormBlock.FORM.SLATES_ROOF, "slates_roof", Arrays.asList(FormBlock.MATERIAL.ROCK, FormBlock.MATERIAL.METAL, FormBlock.MATERIAL.WOOD) );
@@ -90,8 +98,6 @@ public class RegistryHandler
     }
 
     // Blocks
-    public static final RegistryObject<Block> STONE_STAIRS_4STEPS = BLOCKS.register("stone_stairs_4steps", () -> new cpStairs(Blocks.STONE.defaultBlockState(), Block.Properties.copy(Blocks.STONE) ));
-
     public static final RegistryObject<Block> ACACIA_PLANKS_WOOD_SIMPLE_WINDOW = BLOCKS.register("acacia_planks_wood_simple_window", () -> new cpWindows(Blocks.ACACIA_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryObject<Block> ACACIA_PLANKS_WOOD_SQUARE_WINDOW = BLOCKS.register("acacia_planks_wood_square_window", () -> new cpWindows(Blocks.ACACIA_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryObject<Block> BIRCH_PLANKS_WOOD_SIMPLE_WINDOW = BLOCKS.register("birch_planks_wood_simple_window", () -> new cpWindows(Blocks.BIRCH_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.BIRCH_PLANKS)));
@@ -109,6 +115,6 @@ public class RegistryHandler
     public static final RegistryObject<Block> WARPED_PLANKS_WOOD_SIMPLE_WINDOW = BLOCKS.register("warped_planks_wood_simple_window", () -> new cpWindows(Blocks.WARPED_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.WARPED_PLANKS)));
     public static final RegistryObject<Block> WARPED_PLANKS_WOOD_SQUARE_WINDOW = BLOCKS.register("warped_planks_wood_square_window", () -> new cpWindows(Blocks.WARPED_PLANKS.defaultBlockState(), Block.Properties.copy(Blocks.WARPED_PLANKS)));
 
-    public static final RegistryObject<Block> NEWROOF_BLOCK = BLOCKS.register("new_roof", () -> new cpNewRoof(Block.Properties.copy(Blocks.BLACKSTONE)));
-    public static final RegistryObject<BlockEntityType<cpNewRoofEntity>> NEWROOF_ENTITYBLOCK = BLOCK_ENTITIES.register("new_roof", () -> BlockEntityType.Builder.of(cpNewRoofEntity::new, NEWROOF_BLOCK.get()).build(null));
+    //public static final RegistryObject<Block> NEWROOF_BLOCK = BLOCKS.register("new_roof", () -> new cpNewRoof(Block.Properties.copy(Blocks.BLACKSTONE)));
+    //public static final RegistryObject<BlockEntityType<cpNewRoofEntity>> NEWROOF_ENTITYBLOCK = BLOCK_ENTITIES.register("new_roof", () -> BlockEntityType.Builder.of(cpNewRoofEntity::new, NEWROOF_BLOCK.get()).build(null));
 }

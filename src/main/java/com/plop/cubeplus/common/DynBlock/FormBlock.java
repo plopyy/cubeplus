@@ -28,9 +28,12 @@ public class FormBlock
         PILLAR_ROUND_12S,
         STAIRS_4STEPS,
         STAIRS_BASIC,
-        BEAM_SINGLE,
         BEAM,
+        BEAM_SINGLE,
         BEAM_DOUBLE,
+        BEAM_REINFORCED,
+        BEAM_REINFORCED_SINGLE,
+        BEAM_REINFORCED_DOUBLE,
         ARROW_SLIT,
         ARROW_SLIT_ROUNDED,
         SLATES_ROOF,
@@ -79,8 +82,7 @@ public class FormBlock
                     RegistryHandler.BLOCKS.register(RegistryName, () -> new cpPillar(12, Block.Properties.copy(BlockMat)));
                     break;
                 case STAIRS_4STEPS:
-                    if (!RegistryName.equals("stone_stairs_4steps"))
-                        RegistryHandler.BLOCKS.register(RegistryName, () -> new cpStairs(BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));
+                    RegistryHandler.BLOCKS.register(RegistryName, () -> new cpStairs(BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));
                     break;
                 case STAIRS_BASIC:
                     if (CubeConfig.Basic_Stairs_Enalble.get() || IsNewBasicStairs(Materials.get(n).NAME) )
@@ -94,6 +96,15 @@ public class FormBlock
                     break;
                 case BEAM_DOUBLE:
                     RegistryHandler.BLOCKS.register(RegistryName, () -> new cpBeamSupport(3, BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));
+                    break;
+                case BEAM_REINFORCED:
+                    RegistryHandler.BLOCKS.register(RegistryName, () -> new cpBeamSupport2(1, BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));
+                    break;
+                case BEAM_REINFORCED_SINGLE:
+                    RegistryHandler.BLOCKS.register(RegistryName, () -> new cpBeamSupport2(2, BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));
+                    break;
+                case BEAM_REINFORCED_DOUBLE:
+                    RegistryHandler.BLOCKS.register(RegistryName, () -> new cpBeamSupport2(3, BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));
                     break;
                 case ARROW_SLIT:
                     RegistryHandler.BLOCKS.register(RegistryName, () -> new cpArrowSlits(1, BlockMat.defaultBlockState(), Block.Properties.copy(BlockMat)));

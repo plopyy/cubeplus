@@ -1,12 +1,12 @@
 {
     "variants": {
-        "facing=east,sneak=false":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded" },
-        "facing=west,sneak=false":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded" },
-        "facing=south,sneak=false": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "y": 90 },
-        "facing=north,sneak=false": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "y": 90 },
-		"facing=east,sneak=true":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "z": 90 },
-        "facing=west,sneak=true":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "z": 90 },
-        "facing=south,sneak=true": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "z": 90 },
-        "facing=north,sneak=true": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "z": 90 }
+        "facing=east,sneak=false":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "y": 90 },
+        "facing=west,sneak=false":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "y": 90 },
+        "facing=south,sneak=false": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded" },
+        "facing=north,sneak=false": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded" },
+		"facing=east,sneak=true":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "x": 90, "y": 90 },
+        "facing=west,sneak=true":  { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "x": 90, "y": 270 },
+        "facing=south,sneak=true": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "x": 90, "y": 180 },
+        "facing=north,sneak=true": { "model": "cubeplus:block/end_stone_bricks_arrow_slit_rounded", "x": 90 }
     }
 }

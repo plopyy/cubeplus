@@ -1,12 +1,12 @@
 package com.plop.cubeplus.common.DynBlock;
 
-import com.plop.cubeplus.CubePlus;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class FormMats
 {
@@ -103,4 +103,27 @@ public class FormMats
 
         return Mats;
     }
+
+    ResourceLocation getBlockTexture(Block BlockMat)
+    {
+        for ( int i = 0; i < Materials.size(); i++ )
+        {
+            if (Materials.get(i).BLOCK_MAT == BlockMat)
+                return Materials.get(i).TEXTURE;
+        }
+
+        return null;
+    }
+
+    public static Boolean IsMaterial( String name )
+    {
+        for ( int i = 0; i < Materials.size(); i++ )
+        {
+            if (Objects.equals(Materials.get(i).NAME, name))
+                return Boolean.TRUE;
+        }
+
+        return Boolean.FALSE;
+    }
+
 }

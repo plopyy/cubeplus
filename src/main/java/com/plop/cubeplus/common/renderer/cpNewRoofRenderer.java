@@ -1,22 +1,25 @@
 package com.plop.cubeplus.common.renderer;
 
-import com.mojang.blaze3d.vertex.PoseStack;
+/*import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Vector3f;
 import com.plop.cubeplus.CubePlus;
 import com.plop.cubeplus.common.blockentity.cpNewRoofEntity;
 import com.plop.cubeplus.common.setup.ModModelLayers;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.block.ModelBlockRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
 
 public class cpNewRoofRenderer implements BlockEntityRenderer<cpNewRoofEntity>
 {
@@ -55,11 +58,14 @@ public class cpNewRoofRenderer implements BlockEntityRenderer<cpNewRoofEntity>
     @Override
     public void render(cpNewRoofEntity entity, float p_112308_, PoseStack stack, MultiBufferSource buffer, int p_112311_, int p_112312_)
     {
-        VertexConsumer vertexconsumer = MATERIAL1.buffer(buffer, RenderType::entitySolid);
+        ResourceLocation texture = new ResourceLocation( entity.MATERIAL );
+        //CubePlus.LOGGER.info("texture["+texture.getPath()+"]["+texture.toString()+"]");
+        Material Mat = new Material(TextureAtlas.LOCATION_BLOCKS, texture);
+        VertexConsumer vertexconsumer = Mat.buffer(buffer, RenderType::entitySolid);
         stack.pushPose();
         stack.translate(0.5f, 1.5f, 0.5f);
         stack.mulPose(Vector3f.XP.rotationDegrees(180));
         this.new_roof.render(stack, vertexconsumer, p_112311_, p_112312_);
         stack.popPose();
     }
-}
+}*/

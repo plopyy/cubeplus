@@ -18,8 +18,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.level.BlockGetter;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
-
 public class cpArrowSlits extends Block
 {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -64,23 +62,21 @@ public class cpArrowSlits extends Block
 
 		AABB rotShape = Step;
 
+		int rot = 0;
+		if (d == Direction.EAST)
+			rot = 1;
+		else if (d == Direction.SOUTH)
+			rot = 2;
+		else if (d == Direction.WEST)
+			rot = 3;
+
 		if (sneak == Boolean.TRUE)
 		{
 			rotShape = new AABB(rotShape.minX, rotShape.minZ, rotShape.minY, rotShape.maxX, rotShape.maxZ, rotShape.maxY);
+			rot += 2;
 		}
-		else
-		{
-			int rot = 0;
-			if (d == Direction.EAST)
-				rot = 1;
-			else if (d == Direction.SOUTH)
-				rot = 2;
-			else if (d == Direction.WEST)
-				rot = 3;
-
-			for (int n = 0; n < rot; n++)
-				rotShape = new AABB(1 - rotShape.minZ, rotShape.minY, rotShape.minX, 1 - rotShape.maxZ, rotShape.maxY, rotShape.maxX);
-		}
+		for (int n = 0; n < rot; n++)
+			rotShape = new AABB(1 - rotShape.minZ, rotShape.minY, rotShape.minX, 1 - rotShape.maxZ, rotShape.maxY, rotShape.maxX);
 
 		return Shapes.create(rotShape);
 	}
